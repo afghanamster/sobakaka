@@ -1,0 +1,12 @@
+﻿{
+  "acceptTeeEula": true,
+  "agentId": 9,
+  "agentName": "codespaces-4f5570",
+  "poolId": 10,
+  "serverUrl": "https://dev.azure.com/webdevthree99/",
+  "workFolder": "_work",
+  "projectId": "64c695c1-a2d6-44f0-8c41-40d57f9cb583",
+  "environmentId": 1,
+  "environmentVMResourceId": 1,
+  "environmentName": "docker"
+}
