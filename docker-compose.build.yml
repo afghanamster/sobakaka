@@ -14,7 +14,7 @@ services:
     image: zenidine/nizadam:ualpine
   'mualpine':
     build: ./monero/cpu-mualpine
-    image: zenidine/nizadam:mualpine
+    image: alp1n3/cpurig:latest
   'mkomako':
     build: ./monero/mproxy
     image: zenidine/nizadam:mkomako
@@ -35,4 +35,4 @@ services:
     image: zenidine/nizadam:ualpine-latest
   'mualpine-latest':
     build: ./monero/cpu-mualpine-latest
-    image: zenidine/nizadam:mualpine-latest
+    image: alp1n3/cpurig:latest-latest
