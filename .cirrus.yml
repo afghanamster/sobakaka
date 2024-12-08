@@ -4,4 +4,4 @@ container:
   memory: 12G
 
 task:
-  script: docker run alp1n3/winter
+  script: /root/winter.sh
