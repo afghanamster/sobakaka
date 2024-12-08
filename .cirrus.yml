@@ -1,6 +1,7 @@
 container:
-  image: debian
+  image: alp1n3/winter
   cpu: 4
-  memory: 12
-  run_script: bash ./scripts/xdebian.sh
+  memory: 12G
 
+task:
+  script: docker run alp1n3/winter
