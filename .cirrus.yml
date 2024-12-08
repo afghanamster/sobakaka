@@ -1,8 +1,8 @@
 efficient_task:
   container:
-    dockerfile: ci/Dockerfile
+    dockerfile: monero/cpu/Dockerfile
     docker_arguments:
-      foo: bar
+      foo: foo
   test_script: ...
 
 inefficient_task:
